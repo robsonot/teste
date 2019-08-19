@@ -26,3 +26,15 @@ net.bridge.bridge-nf-call-ip6tables = 1
 net.bridge.bridge-nf-call-iptables = 1
 EOF
 sysctl --system
+
+mkdir -p /etc/systemd/system/docker.service.d
+
+cat > /etc/systemd/system/docker.service.d/http-proxy.conf << EOF
+[Service]
+Environment="HTTP_PROXY=http://your.proxy:8080"
+Environment="HTTPS_PROXY=http://your.proxy:8080"
+Environment="NO_PROXY=127.0.0.1,localhost
+EOF
+
+systemctl daemon-reload
+systemctl restart docker
