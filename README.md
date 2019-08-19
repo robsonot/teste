@@ -31,8 +31,8 @@ mkdir -p /etc/systemd/system/docker.service.d
 
 cat > /etc/systemd/system/docker.service.d/http-proxy.conf << EOF
 [Service]
-Environment="HTTP_PROXY=http://your.proxy:8080"
-Environment="HTTPS_PROXY=http://your.proxy:8080"
+Environment="HTTP_PROXY=http://10.79.32.19:3128"
+Environment="HTTPS_PROXY=http://10.79.32.19:3128"
 Environment="NO_PROXY=127.0.0.1,localhost
 EOF
 
