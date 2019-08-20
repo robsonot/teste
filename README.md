@@ -45,3 +45,5 @@ kubectl apply -f https://k8s.io/examples/application/guestbook/redis-slave-deplo
 kubectl apply -f https://k8s.io/examples/application/guestbook/redis-slave-service.yaml
 kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-deployment.yaml
 kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-service.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
