@@ -47,3 +47,6 @@ kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-deployme
 kubectl apply -f https://k8s.io/examples/application/guestbook/frontend-service.yaml
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/baremetal/service-nodeport.yaml
